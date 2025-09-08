@@ -6,12 +6,11 @@ package lab1;
 class FizzBuzz {
 
     public static void main(String[] args) {
-        doFizzBuzz(5);
+        doFizzBuzz(1);
     }
 
-    static void doFizzBuzz(int i) {
-        i = 1;
-        while(i < 101) {
+    private static void doFizzBuzz(int i) {
+        while(i < 100) {
 
             // Find out which numbers divide i.
             boolean divisibleBy3 = i % 3 == 0;
