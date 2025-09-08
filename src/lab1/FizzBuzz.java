@@ -6,11 +6,11 @@ package lab1;
 class FizzBuzz {
 
     public static void main(String[] args) {
-        doFizzBuzz();
+        doFizzBuzz(5);
     }
 
-    private static void doFizzBuzz() {
-        int i = 1;
+    static void doFizzBuzz(int i) {
+        i = 1;
         while(i < 101) {
 
             // Find out which numbers divide i.
