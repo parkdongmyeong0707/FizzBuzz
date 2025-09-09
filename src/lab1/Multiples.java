@@ -2,10 +2,16 @@ package lab1;
 
 public class Multiples {
     public static void main(String[] args) {
-        System.out.println(multiples(1000, 3, 5));
+        System.out.println(multiples()); // uses the default
     }
 
-    public static int multiples(int n, int a, int b) {
+    // Default version for tests that expect no arguments
+    static int multiples() {
+        return multiples(1000, 3, 5);
+    }
+
+    // Generalized version
+    static int multiples(int n, int a, int b) {
         int count = 0;
         for (int i = 1; i < n; i++) {
             if (i % a == 0 || i % b == 0) {
@@ -15,3 +21,4 @@ public class Multiples {
         return count;
     }
 }
+
