@@ -2,31 +2,19 @@ package lab1;
 
 public class Multiples {
     public static void main(String[] args) {
-        int count = multiples(1000, 3, 5);
-        System.out.println(count);
+        // Inline the temp variable as suggested by the refactor tip:
+        System.out.println(multiples(1000, 3, 5));
     }
 
+    // package-private (no 'private') so tests can call it
     static int multiples(int n, int a, int b) {
-
-        int i = 1;
-        int k = 0;
-
-        while(i < n) {
-            boolean divisibleBy3 = i % a == 0;
-            boolean divisibleBy5 = i % b == 0;
-
-            if(divisibleBy3){
-                k++;
-                i++;
-            } else if(divisibleBy5){
-                k++;
-                i++;
-            } else{
-                i++;
+        int count = 0;
+        for (int i = 1; i < n; i++) {
+            if (i % a == 0 || i % b == 0) {
+                count++;
             }
-
         }
-        System.out.println(k);
-        return k;
+        return count;
     }
 }
+
