@@ -11,7 +11,7 @@ public class Multiples {
     }
 
     // Generalized version
-    static int multiples(int n, int a, int b) {
+    public static int multiples(int n, int a, int b) {
         int i = 1;
         int k = 0;
 
