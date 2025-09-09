@@ -6,7 +6,7 @@ public class Multiples {
     }
 
     // Default version for tests that expect no arguments
-    static int multiples() {
+    public static int multiples() {
         return multiples(1000, 3, 5);
     }
 
